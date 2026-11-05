@@ -8,15 +8,15 @@ int main(void) {
 
     // Arithmetic operators
     printf("Arithmetic operators \n");
-    printf("El valor inicial de i es %d y el valor inicial de j es %d \n\n", i, j);
+    printf("The initial value of i is %d and the initial value of j is %d \n\n", i, j);
 
     anterior = i;
     i += 3;
-    printf("Suma i + 3: %d + 3 = %d\n", anterior, i);
+    printf("Sum i + 3: %d + 3 = %d\n", anterior, i);
 
     anterior = i;
     i -= 3;
-    printf("Resta i - 3: %d - 3 = %d\n", anterior, i);
+    printf("Substraction i - 3: %d - 3 = %d\n", anterior, i);
 
     anterior = i;
     i *= 10;
@@ -24,17 +24,17 @@ int main(void) {
 
     anterior = i;
     i /= 2;
-    printf("División i / 2: %d / 2 = %d\n", anterior, i);
+    printf("Division i / 2: %d / 2 = %d\n", anterior, i);
 
     anterior = i;
     i %= 10;
-    printf("Módulo i % 10: %d %% 10 = %d\n", anterior, i);
+    printf("Modulo i % 10: %d %% 10 = %d\n", anterior, i);
 
-    printf("\nEl valor de i al final es: %d \n", i);
+    printf("\nThe value of i at the end is: %d \n", i);
     
     // Ternary operators
     printf("\nTernary operators \n");
-    printf("El número %d es: %s \n", j, j % 2 == 0? "Par": "Impar");
+    printf("The number %d is: %s \n", j, j % 2 == 0? "Even": "Odd");
 
     // PreIncrement (Decrement) And PostIncrement (Decrement) operators
     printf("\nPreIncrement (Decrement) And PostIncrement (Decrement) operators \n");
@@ -42,14 +42,14 @@ int main(void) {
     // PostIncrement
     printf("PostIncrement \n");
     i = 10;
-    printf("El valor inicial de i es %d y el valor de j va a ser igual a 5 + i++ \n", i, j);
+    printf("The initial value of i is %d and the value of j is going to be equal to 5 + i++ \n", i, j);
     j = 5 + i++;  // Compute 5 + i, _then_ increment i
     printf("%d, %d\n\n", i, j);  // Prints 11, 15
 
     // PreIncrement
     printf("PreIncrement \n");
     i = 10;
-    printf("El valor inicial de i es %d y el valor de j va a ser igual a 5 + ++i \n", i, j);
+    printf("The initial value of i is %d and the value of j is going to be equal to 5 + ++i \n", i, j);
     j = 5 + ++i;  // Increment i, _then_ compute 5 + i
     printf("%d, %d\n", i, j);  // Prints 11, 16
 
@@ -57,33 +57,33 @@ int main(void) {
     printf("\nConditional operators \n");
     i = 5;
     j = 10;
-    printf("El valor inicial de i es %d y el valor inicial de j es %d \n\n", i, j);
+    printf("The initial value of i is %d and the initial value of j is %d \n\n", i, j);
     
     if (j > i) {
-        printf("j es mayor que i \n");
+        printf("j is greater than i \n");
     }
 
     if (i < j) { 
-        printf("i es menor que j \n");
+        printf("i is less than j \n");
     }
 
     if (i != j) {
-        printf("i es diferente que j \n");
+        printf("i is different than j \n");
     }
 
     j = 5;
-    printf("\nEl valor de j cambia a %d \n", j);
+    printf("\nThe value of j changes to %d \n", j);
 
     if (i == j) {
-        printf("i es igual que j \n");
+        printf("i is equal to j \n");
     }
 
     if (i >= j) {
-        printf("i es mayor o igual que j \n");
+        printf("i is greater than or equal to j \n");
     }
 
     if (j <= i) {
-        printf("j es menor i igual que i \n");
+        printf("j is less than or equal to i \n");
     }
 
     // Boolean operators
@@ -91,24 +91,24 @@ int main(void) {
 
     i = 10;
     j = 20;
-    printf("El valor inicial de i es %d y el valor inicial de j es %d \n\n", i, j);
+    printf("The initial value of i is %d and the initial value of j is %d \n\n", i, j);
 
     printf("&& Operator \n");
-    printf("if i < 15 && j > 15 -> Imprime ALGO -> \n");
+    printf("if i < 15 && j > 15 -> Prints SOMETHING -> \n");
 
     if (i < 15 && j > 15) {
-        printf("ALGO \n");
+        printf("SOMETHING \n");
     }
 
     printf("\n|| Operator \n");
-    printf("if i > 15 || j > 15 -> Imprime UNA COSA -> \n");
+    printf("if i > 15 || j > 15 -> Prints A THING -> \n");
 
     if (i > 15 || j > 15) {
-        printf("UNA COSA \n");
+        printf("A THING \n");
     }
 
     printf("\n! Operator \n");
-    printf("if !(i >= 15) -> Imprime UNA CARA -> \n");
+    printf("if !(i >= 15) -> Prints A FACE -> \n");
 
     if (!(i >= 15)) {
         printf("( ͡ಠ ͜ʖ ͡ಠ)\n");
@@ -121,14 +121,14 @@ int main(void) {
     char l = 'P';
     bool x = true;
 
-    printf("Tenemos las siguientes variables: i = %d, k = %f, l = %c, x = %d ( True ) \n", i, k, l, x);
-    printf("Cada una ocupa la siguiente cantidad de memoria en bytes: \n\n");
+    printf("We have the following variables: i = %d, k = %f, l = %c, x = %d ( True ) \n", i, k, l, x);
+    printf("Each one occupies the next amount of bytes in memory: \n\n");
     
     printf("i = %zu \n", sizeof(i));
     printf("k = %zu \n", sizeof(k));
     printf("l = %zu \n", sizeof(l));
     printf("x = %zu \n\n", sizeof(x));
 
-    printf("En mi sistema una variable de tipo float guarda la misma cantidad de bytes que una de tipo int por defecto");
+    printf("In my system a type float variable reserves the same amount of bytes as a int variable by default");
 
 }
