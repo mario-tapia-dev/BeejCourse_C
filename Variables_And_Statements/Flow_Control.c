@@ -22,7 +22,9 @@ int main(void) {
         printf("\\ (^_^) / \n");
     }
 
-    // 
+    // IF - ELSE IF
+    printf("IF - ELSE IF \n");
+    
 
     
 }
